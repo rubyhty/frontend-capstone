@@ -83,7 +83,7 @@ function BookingForm({ availableTimes, onSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form id='reservation' onSubmit={handleSubmit}>
         <div class='topicline'><h1>Reservations</h1></div>
      
         <div class='eachline'>  
