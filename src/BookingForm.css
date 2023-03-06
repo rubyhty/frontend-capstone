@@ -1,0 +1,105 @@
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; 
+    font-size: 1.2rem;
+    margin:  50px auto;
+    width: 72%;
+    background-color:#f4cf1441;
+    padding: 2rem;
+ 
+  }
+
+  .eachline{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content:space-between;
+  }
+
+  .topicline{
+    grid-column: 1 / span 3;
+    text-align: center;
+  }
+
+  .topicline>h1{
+    margin: 0;
+    font-style: italic;
+  }
+
+
+
+
+  label {
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    color: #020202;
+  }
+  
+  input,
+  select {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    
+  
+  }
+  
+  button[type='submit'] {
+    padding: 0.5rem 1rem;
+    width: 100%;
+   
+    border: none;
+    background-color:#f4ce14;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #ffff00;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* add responsive styles for screens smaller than 600px */
+    form {
+      width: 90%;
+    }
+  
+    .row,
+    .column {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    label {
+      width: 100%;
+      text-align: left;
+    }
+  
+    input,
+    select {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+   
+    .row {
+      flex-wrap: wrap;
+    }
+  
+    .column {
+      width: 50%;
+    }
+  }
